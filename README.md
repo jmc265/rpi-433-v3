@@ -59,7 +59,8 @@ gpio readall
 ```js
 var rpi433 = require("rpi-433-v3"),
   rfSniffer = rpi433.sniffer({
-    pin: 2, //Snif on GPIO 2 (or Physical PIN 13)
+    pin: 2, //Sniff on GPIO 2 (or Physical PIN 13) (optional)
+    pulseLength: 350,   // Listen for codes with this pulse length (optional)
     debounceDelay: 500 //Wait 500ms before reading another code
   }),
   rfEmitter = rpi433.emitter({

@@ -21,7 +21,7 @@ function Sniffer(options) {
   //Launch Sniffer
   Sniffer.process = spawn(
     path.join(__dirname, Sniffer.SCRIPT), [
-    '--pin', options.pin
+      options.pulseLength, options.pin
   ]);
 
   //Emit data received

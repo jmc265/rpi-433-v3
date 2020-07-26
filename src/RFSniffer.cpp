@@ -1,7 +1,7 @@
 /*
   RFSniffer
 
-  Usage: ./RFSniffer [<pulseLength>]
+  Usage: ./RFSniffer [<pulseLength>, <pin>] 
   [] = optional
 
   Hacked from http://code.google.com/p/rc-switch/
