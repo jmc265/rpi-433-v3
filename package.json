@@ -1,0 +1,44 @@
+{
+  "name": "rpi-433-v2",
+  "version": "1.0.3",
+  "description": "Simple NodeJS module to send and receive decimal codes through 433Mhz device on RaspberryPI 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "mkdir ./build && cd ./src && /usr/bin/make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ftrier/rpi-433.git"
+  },
+  "keywords": [
+    "raspberry",
+    "rasp",
+    "raspi",
+    "domotic",
+    "433mhz",
+    "sniffer",
+    "sniff",
+    "send",
+    "receive",
+    "nodejs",
+    "outlets",
+    "radio",
+    "code",
+    "wiringpi",
+    "rc",
+    "gpio"
+  ],
+  "author": {
+    "name": "Felix Trier"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ftrier/rpi-433/issues"
+  },
+  "homepage": "https://github.com/ftrier/rpi-433#readme",
+  "dependencies": {
+    "q": "^1.5.1",
+    "underscore": "^1.9.1"
+  }
+}
