@@ -1,20 +1,23 @@
-# rpi-433-v2
+# rpi-433-v3
 
-[![npm version](https://badge.fury.io/js/rpi-433-v2.svg)](http://badge.fury.io/js/rpi-433)
+Simple NodeJS module to send and receive decimal codes through 433Mhz device on RaspberryPI 2
 
-[![NPM](https://nodei.co/npm/rpi-433-v2.png?downloads=true)](https://nodei.co/npm/rpi-433-v2/)
+[![npm version](https://badge.fury.io/js/rpi-433-v3.svg)](http://badge.fury.io/js/rpi-433-v3)
+
+[![NPM](https://nodei.co/npm/rpi-433-v3.png?downloads=true)](https://nodei.co/npm/rpi-433-v3/)
+
+## v1/v2/v3
+
+The original library is [here](https://github.com/eroak/rpi-433/). Then [ftrier](https://github.com/ftrier/) forked it into a new repo called rpi-433-v2 which is now deleted (but still published on NPM). v2 added the ability to set a Protocol and updated the CPP to the latest. However, it seems as though v2 is broken for sniffing as the stdout for the CPP did not flush the output therefore node could not pick up the output. Therefore, I have created v3 which attempts to fix that.
 
 ### Credits
 
-For my projects I needed to set the protocol. This was not possible in the original version, https://nodei.co/npm/rpi-433/
-So all credits go to eroak.
+So all credits go to eroak and ftrier.
 
 ### Modifications to the original
 
 - Protocol can be set
 - Updated the scripts (codesend and RFSniffer) to the latest
-
-Simple NodeJS module to send and receive decimal codes through 433Mhz device on RaspberryPI 2
 
 ### Dependencies
 
@@ -34,7 +37,7 @@ root@raspberrypi:/home/pi/wiringPi/wiringPi# ./build
 ### Installation
 
 ```bash
-npm install rpi-433-v2
+npm install rpi-433-v3
 ```
 
 ### Usage
@@ -54,7 +57,7 @@ gpio readall
 ### Example
 
 ```js
-var rpi433 = require("rpi-433-v2"),
+var rpi433 = require("rpi-433-v3"),
   rfSniffer = rpi433.sniffer({
     pin: 2, //Snif on GPIO 2 (or Physical PIN 13)
     debounceDelay: 500 //Wait 500ms before reading another code
