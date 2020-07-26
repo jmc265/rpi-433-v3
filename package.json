@@ -1,6 +1,6 @@
 {
-  "name": "rpi-433-v2",
-  "version": "1.0.3",
+  "name": "rpi-433-v3",
+  "version": "1.0.4",
   "description": "Simple NodeJS module to send and receive decimal codes through 433Mhz device on RaspberryPI 2",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ftrier/rpi-433.git"
+    "url": "git+https://github.com/jmc265/rpi-433-v3.git"
   },
   "keywords": [
     "raspberry",
@@ -30,13 +30,13 @@
     "gpio"
   ],
   "author": {
-    "name": "Felix Trier"
+    "name": "James Cross"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ftrier/rpi-433/issues"
+    "url": "https://github.com/jmc265/rpi-433-v3/issues"
   },
-  "homepage": "https://github.com/ftrier/rpi-433#readme",
+  "homepage": "https://github.com/jmc265/rpi-433-v3#readme",
   "dependencies": {
     "q": "^1.5.1",
     "underscore": "^1.9.1"
