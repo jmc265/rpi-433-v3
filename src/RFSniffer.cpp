@@ -11,12 +11,9 @@
 #include "RCSwitch.h"
 #include <stdlib.h>
 #include <stdio.h>
-     
-     
+      
 RCSwitch mySwitch;
  
-
-
 int main(int argc, char *argv[]) {
   
      // This pin is not the first pin on the RPi GPIO header!
@@ -45,21 +42,14 @@ int main(int argc, char *argv[]) {
         int value = mySwitch.getReceivedValue();
     
         if (value == 0) {
-          printf("Unknown encoding\n");
-        } else {    
-   
+          printf("Unknown encoding\n");        } else {
           printf("Received %i\n", mySwitch.getReceivedValue() );
         }
     
+        fflush(stdout);
         mySwitch.resetAvailable();
-    
       }
-      
-  
   }
 
   exit(0);
-
-
 }
-
