@@ -11,6 +11,7 @@
 #include "RCSwitch.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
       
 RCSwitch mySwitch;
  
@@ -50,6 +51,7 @@ int main(int argc, char *argv[]) {
         fflush(stdout);
         mySwitch.resetAvailable();
       }
+      usleep(100);
   }
 
   exit(0);
