@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
         if (value == 0) {
           printf("Unknown encoding\n");
         } else {
-          printf("Received %i\n", mySwitch.getReceivedValue() );
+          printf("{\"code\": %i, \"pulseLength\": %i}", mySwitch.getReceivedValue(), mySwitch.getReceivedDelay());
         }
     
         fflush(stdout);
